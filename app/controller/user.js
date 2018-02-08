@@ -17,11 +17,11 @@ class UserController extends Controller {
             message: ""
         };
         if (res) {
-            response.message = "测试查询成功";
+            response.message = "查询成功";
             response.status = true;
             response.data = res;
         } else {
-            response.message = "测试查询失败";
+            response.message = "查询失败";
         }
         ctx.body = response;
         ctx.status = 200;
